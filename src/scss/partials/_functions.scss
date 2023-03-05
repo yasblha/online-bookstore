@@ -1,0 +1,10 @@
+@function rem($px) {
+    @return calc ($px/16) * 1rem;
+}
+
+@mixin cover-bg {
+    background-image: url(assets\img\fond.jpg);
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: cover;   
+}
