@@ -1,5 +1,7 @@
 # Fichier contenant des informations confidentielles
 .env
+
+# Fichiers générés par les dépendances et Jekyll
 _site/
 .sass-cache/
 .jekyll-cache/
@@ -7,3 +9,14 @@ _site/
 /vendor
 .idea/
 .DS_Store
+
+# Fichiers générés par VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+.vs/
