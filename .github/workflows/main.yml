@@ -1,0 +1,16 @@
+name: CI / GitHub Actions
+run-name: ${{ github.actor }}
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Vérifie le code
+        uses: actions/checkout@v2
+      - name: Installe les dépendences
+        run: npm install
+      - name: Lance les tests
+        run: npm test
